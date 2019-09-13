@@ -70,7 +70,7 @@
 </addon>
 
 
-<addon id="plugin.video.faustinotv" name="FaustinoTV" version="1.0a" provider-name="TeamFaustinoTV">
+<addon id="plugin.video.faustinotv" name="FaustinoTV" version="1.5" provider-name="TeamFaustinoTV">
 
   <requires>
 
