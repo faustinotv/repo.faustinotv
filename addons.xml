@@ -110,12 +110,8 @@
 
   <extension point="xbmc.addon.metadata">
     <summary lang="en">FaustinoTV</summary>
-    <description lang="en">FaustinoTV</description>
+    <description lang="en">TV AO VIVO | FILMES | SERIES</description>
     <platform>all</platform>
-	<assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
  </extension>
 
 </addon>
@@ -189,7 +185,7 @@
     <extension point="xbmc.addon.repository" name="Repositório FaustinoTV">
         <info>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/faustinotv/master/zip/</datadir>
+        <datadir zip="true">http://repo.faustinotv.ml/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositório FaustinoTV</summary>
