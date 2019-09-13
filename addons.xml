@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.program.adritecnewsinstalladdons" name="[COLOR dodgerblue][B]Adritec[/B][COLOR red][B]News[/B] [COLOR gold][B]ON[/B][/COLOR]" version="2.2.3" provider-name="[COLOR dodgerblue][B]Adritec[/B][/COLOR][COLOR red][B]News[/B][/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer"/>
+    <import addon="script.module.pyamf"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.addon.signals" version="0.0.1"/>
+    <import addon="script.module.unidecode" version="0.4.16"/>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="adritec.py">
+  <provides>video executable</provides>
+  </extension>
+    <extension point="xbmc.service" library="servicos.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+	<description lang="en">[COLOR white][B]Bem vindo ao Instalador de addons, uma nova forma para agilizar uma instalação de addons providas da Internet. Agora com [/COLOR][COLOR orange][B]MANUTENÇÃO em seu Kodi[/B][/COLOR][COLOR white][B], excelente ferramenta e eficaz[/B].[/COLOR] [COLOR white][B]*NOSSO CANAL: [B][COLOR dodgerblue]Pesquize no [COLOR white][/B][COLOR red][B]YouTube [/B][/COLOR] [B]por: [/B][COLOR dodgerblue][B]Adritec[/B][/COLOR][COLOR red][B] News[/B][/COLOR][COLOR white][B] *COLABORE: [/B][/COLOR][COLOR gold][B]https://apoia.se/adritecnews[/B][/COLOR]  [COLOR dodgerblue][B]Adritec[/B][/COLOR][COLOR red][B] News[/B][/COLOR][COLOR gold][B] ON [/B][/COLOR][B]É apenas um AGREGADOR de addons, assim como o Google.com, apenas agrega e organiza os links externos e outros.[/B][/COLOR] [COLOR orangered][B]Não sou responsável pelos arquivos (add-ons) aqui encontrados.[/B][/COLOR]</description>
+	<disclaimer lang="en">[COLOR orangered][B]ATENÇÃO[/B]:[/COLOR][COLOR lawngreen] [B]"PROIBIDA COPIA E INFORMAÇÕES CONTIDOS NESSE SCRIPT (ADD-ON) SEM MINHA ALTORIZAÇÃO"[/B][/COLOR] [COLOR ][COLOR orangered][B]REGISTRO:[/COLOR] [COLOR skyblue][B]"SCRIPT REGISTRADO POR QUESTÃO DE DIREITOS AUTORAIS"[/B][/COLOR]</disclaimer>
+   	<platform>all</platform>
+    <website>http://adritecnews.com</website>
+    <source></source>
+    <forum></forum>
+    <news>*Este trabalho está licenciado sob uma Licença Creative Commons
+*Atribuição-NãoComercial-SemDerivações 4.0 Internacional.
+*Para ver uma cópia desta licença,
+*visite: http://creativecommons.org/licenses/by-nc-nd/4.0/.</news>
+	<assets>
+            <icon>images/icon.png</icon>
+            <fanart>images/fanart.jpg</fanart>
+            <screenshot>resources/print/0.jpg</screenshot>
+            <screenshot>resources/print/1.jpg</screenshot>
+            <screenshot>resources/print/2.jpg</screenshot>
+            <screenshot>resources/print/3.jpg</screenshot>
+	</assets>
+	</extension>
+  <extension point="xbmc.addon.repository" name="adritecNews Repository">
+	<info compressed="false">http://raw.github.com/adritec/adritecrepo/master/addons.xml</info>
+	<checksum>http://raw.github.com/adritec/adritecrepo/master/addons.xml.md5</checksum>
+	<datadir zip="true">http://raw.github.com/adritec/adritecrepo/master/repo/</datadir>
+  </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" version="2.7.1" name="f4mTester" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+
+
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.faustinotv" name="FaustinoTV" version="1.0a" provider-name="TeamFaustinoTV">
+
+  <requires>
+
+    <import addon="xbmc.python" version="2.1.0"/>
+
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+
+    <import addon="script.module.beautifulsoup4"/>
+
+    <import addon="script.module.requests"/>
+
+    <import addon="script.module.httplib2"/>
+
+    <import addon="script.module.youtube.dl" optional="true"/>
+
+    <import addon="plugin.video.youtube"/>
+
+    <import addon="script.module.urlresolver" optional="true"/>
+
+    <import addon="script.module.simplejson"/>
+
+	<import addon="script.module.livestreamer" optional="true"/>
+
+	<import addon="plugin.video.f4mTester" version="2.7.1"/>
+
+	<import addon="script.video.F4mProxy" version="2.1.0"/>
+
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+
+        <provides>video</provides>
+
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">FaustinoTV</summary>
+    <description lang="en">FaustinoTV</description>
+    <platform>all</platform>
+	<assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+ </extension>
+
+</addon>
+
+<addon id="plugin.video.gdrive" version="0.8.35" name="gdrive" provider-name="ddurdle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image programs</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
+        <description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0" provider-name="Avigdor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist Loader</summary>
+    <summary lang="he">Playlist Loader</summary>
+    <description lang="en">Playlist Loader</description>
+    <description lang="he">Playlist Loader</description>
+    <platform>all</platform>
+	<news>
+1.2.0
+- (fix) support strings.xml (old Kodi versions).
+1.1.9
+- Added an option to show groups in channels lists.
+	</news>
+  </extension>
+</addon>
+
+<addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.4" provider-name="SiLVO">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Aeon Nox: SiLVO Repo">
+		<dir minversion="15.0.0">
+			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard/addons.xml</info>
+			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard</datadir>
+		</dir>
+		<dir minversion="16.0.0">
+			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml</info>
+			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis</datadir>
+		</dir>
+		<dir minversion="16.9.0">
+			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml</info>
+			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>My version of Aeon Nox 5</summary>
+		<description>Main Repository for Aeon Nox: SiLVO</description>
+		<platform>all</platform>
+		<news>[B]***Recent Changes***[CR]Remove md5 hash support (never used it)</news>
+	</extension>
+</addon>
+
+<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="1.5" provider-name="Faustino">
+    <extension point="xbmc.addon.repository" name="Repositório FaustinoTV">
+        <info>http://repo.faustino.ninja/addons.xml</info>
+        <checksum>http://repo.faustino.ninja/addons.xml.md5</checksum>
+        <datadir zip="true">http://repo.faustino.ninja/zip/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositório FaustinoTV</summary>
+        <description>Este é o repositório oficial com todos os addons e atualizações do FaustinoTV. Aqui você também encontra as dependências necessárias para que tudo funcione corretamente</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.video.F4mProxy"
+	     name="F4mProxy"
+	     version="2.8.7"
+	     provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+  </extension>
+
+
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+</addons>
