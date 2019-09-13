@@ -39,8 +39,8 @@
   </extension>
 
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">FaustinoTV</summary>
-    <description lang="en">TV AO VIVO | FILMES | SERIES</description>
+    <summary lang="en">TV AO VIVO | FILMES | SERIES</summary>
+    <description lang="en">PLUGIN OFICIAL FAUSTINOTV</description>
     <platform>all</platform>
  </extension>
 
