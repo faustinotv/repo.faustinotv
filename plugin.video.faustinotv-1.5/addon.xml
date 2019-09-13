@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<addon id="plugin.video.faustinotv" name="FaustinoTV" version="1.0a" provider-name="TeamFaustinoTV">
+<addon id="plugin.video.faustinotv" name="FaustinoTV" version="1.5" provider-name="TeamFaustinoTV">
 
   <requires>
 
@@ -42,10 +42,6 @@
     <summary lang="en">FaustinoTV</summary>
     <description lang="en">FaustinoTV</description>
     <platform>all</platform>
-	<assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
  </extension>
 
 </addon>
