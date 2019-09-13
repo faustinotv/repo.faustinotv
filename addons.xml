@@ -187,9 +187,9 @@
 
 <addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="1.5" provider-name="Faustino">
     <extension point="xbmc.addon.repository" name="Repositório FaustinoTV">
-        <info>http://repo.faustino.ninja/addons.xml</info>
-        <checksum>http://repo.faustino.ninja/addons.xml.md5</checksum>
-        <datadir zip="true">http://repo.faustino.ninja/zip/</datadir>
+        <info>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/faustinotv/master/zip/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositório FaustinoTV</summary>
