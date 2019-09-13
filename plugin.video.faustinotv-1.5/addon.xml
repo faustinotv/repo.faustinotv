@@ -40,7 +40,7 @@
 
   <extension point="xbmc.addon.metadata">
     <summary lang="en">FaustinoTV</summary>
-    <description lang="en">FaustinoTV</description>
+    <description lang="en">TV AO VIVO | FILMES | SERIES</description>
     <platform>all</platform>
  </extension>
 
