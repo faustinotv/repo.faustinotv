@@ -163,7 +163,7 @@ You can clone the project and host it in your own server.
 <addon id="plugin.video.f4mTester" version="2.7.1" name="f4mTester" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.1"/>
+        <import addon="script.video.F4mProxy" version="2.8.7"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -206,7 +206,7 @@ You can clone the project and host it in your own server.
 
 	<import addon="plugin.video.f4mTester" version="2.7.1"/>
 
-	<import addon="script.video.F4mProxy" version="2.1.0"/>
+	<import addon="script.video.F4mProxy" version="2.8.7"/>
 
   </requires>
 
