@@ -1,2 +1,4 @@
 v0.1.0
 Mudanças de fanart e icon
+v1.7
+Adiconado plugin do GoogleDrive para funcionamento do conteúdo em 4K
