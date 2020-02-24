@@ -44,6 +44,11 @@
     <summary lang="en">TV AO VIVO | FILMES | SERIES</summary>
     <description lang="en">[B][COLOR yellow]FaustinoTV[/COLOR] [COLOR lime]//[/COLOR] [COLOR deepskyblue]Free4ALL[/COLOR][/B]</description>
     <platform>all</platform>
+			<news>
+v2.0 released Feb 24, 2020:
+- Adicionado Área VIP: Bônus para doadores
+		</news>
+
  </extension>
 
 </addon>
