@@ -206,7 +206,7 @@ You can clone the project and host it in your own server.
 </addon>
 
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.1" provider-name="Equipe FaustinoTV">
 
   <requires>
 
@@ -224,7 +224,7 @@ You can clone the project and host it in your own server.
 
     <import addon="script.module.youtube.dl" optional="true"/>
 
-    <import addon="plugin.video.youtube"/>
+    <import addon="plugin.video.youtube" optional="true"/>
 
     <import addon="script.module.urlresolver" optional="true"/>
 
@@ -236,7 +236,7 @@ You can clone the project and host it in your own server.
 
 	<import addon="script.video.F4mProxy" version="2.1.0"/>
 
-    <import addon="plugin.googledrive" version="1.3.3"/>
+    <import addon="plugin.googledrive" version="1.3.3" optional="true"/>
 
   </requires>
 
