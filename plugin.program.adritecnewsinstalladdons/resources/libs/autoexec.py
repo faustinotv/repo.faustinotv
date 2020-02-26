@@ -1,0 +1,39 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# encoded by pyprotect
+# http://gabrielsilva.tk/pyprotect
+#                 -*- adritecNews -*-                      #
+#----------------------------------------------------------#
+#  INSTALADOR DE ADD-ONS PARA O KODI XBMC - VERSÃO: 2.2.3  #
+#----------------------------------------------------------#
+# KODI: GPL https://pt.wikipedia.org/wiki/Kodi             #   
+# KODI WIKI: https://kodi.wiki/view/Main_Page              #
+# PROGRAMAÇÃO: PYTHON: https://docs.python.org/2/tutorial/ #
+# CONTATO: adritec_dados@yahooo.com.br                     #
+# CANAL: http://YouTube.com/adritecnews                    # 
+# SITE: http://adritecnews.com                             #
+#----------------------------------------------------------#
+#     TODOS OS DIREITOS RESERVADOS: adritecNews 2018       #
+#                                                          #
+#      Este trabalho está licenciado sob uma Licença       #
+#Creative Commons Atribuição-NãoComercial-SemDerivações 4.0# 
+#      Internacional. Para ver uma cópia desta licença,    # 
+# visite http://creativecommons.org/licenses/by-nc-nd/4.0/ #
+#       'Atribuição-Não-Comercial-SemDerivativos 4.0       # 
+#             Internacional (CC BY-NC-ND 4.0)'             #
+#----------------------------------------------------------#
+#                "ATENÇÃO INTERNAUTAS"                     #
+#                                                          #
+#       FICA PROIBIDO CÓPIA, MODIFICAÇÃO, DIVULGAÇÃO       #
+#                SEM MINHA ALTORIZAÇÃO                     #
+#    Add-on desenvolvido para fazer AJUSTES no seu KODI,   #
+#   para Inscritos e não inscritos do canal adritec News.  #
+#----------------------------------------------------------#
+import base64, codecs
+magic = 'DQppbXBvcnQgemxpYg0KaW1wb3J0IGJhc2U2NA0KZGVmIGRlY29kZV9iYXNlNjQoIGI2NHN0cmluZyApOg0KICAgIGRlY29kZWRfZGF0YSA9IGJhc2U2NC5iNjRkZWNvZGUoIGI2NHN0cmluZyApDQogICAgcmV0dXJuIHpsaWIuZGVjb21wcmVzcyggZGVjb2RlZF9kYXRhICwgLTE1KQ0KDQpkZWYgYmFzZTY0X2VuY29kZSggc3RyaW5nX3ZhbCApOg0KICAgIHpsaWJiZWRfc3RyID0gemxpYi5jb21wcmVzcyggc3RyaW5nX3ZhbCApDQogICAgY29tcHJlc3NlZF9zdHJpbmcgPSB6bGliYmVkX3N0clsyOi00XQ0KICAgIHJldHVybiBiYXNlNjQuYjY0ZW5jb2RlKCBjb21wcmVzc2VkX3N0cmluZyApDQoJDQpleGVjKGRlY29kZV9iYXNlNjQoJ3ZWaFpjK1BHRVg0bWY4VXNYRnNBVmhCSUtaVnlpaEdsa2tRNks1ZFczTkxoUEhBWkZnZ01xYkZBQUprWjdrcGwrOWZrSVQ4aWIvRWZTL2NjT0hpc0pKZGo3WllnOVBUeFRVOWZBN1lzY2k3SjQyd1pCK3IzNTduUWYwUkprbWY2ejhXS0Jad0dKSWVsUlpyUDJuT2VMMGtTU1NyWmtoS21kZGozdHVSUFBRSS9pa3Y4TTJXUy9xbGtta1VGT3lTUlFQWm9GZ25hcG84eExXUlBzeGRQV3VEd0t3THQwOEZnZERXOUdKQStjWXQwdFdCWldQQjh3YU5sR0NVY3BPT01maEVzRXpKS1U3VVA0YlpQOFlreUx4ZFJ6eWxMWG1jSHdZRkU2Y05RV2ZZc2FKOFkvQjlQYjk4RG4zb0pGMVJxZ05rODk5d2lrdmV1SHlZMHpoUHFPU3M1My8rTDQ3ZFpuR2U0WkxTSGtrZVpTTUh0SDRIbzVTTEV4ZkRIbkdXZUt3b2FzeWp0ZFRyMytaSjJOTHFPUy9hSWNVVGdvcnJEc01nV3J1KzMyd21kazJVRW9uNnYzWXJUU0FoQ3MyaVcwdE0wVmJRV2NreW5MR055T3ZVRVRlZUsyc0svUW5zNHUrSFZFRm5tanV1WENqUkFvbitlVTlEWVVxVWptYzFaQ3FBaEpsR0hvcUc0a0lNemJ5ZGJ3MjhibXduSW1velN3K1lreTJ'
+love = 'IpSAbX1ceGHb3pyAvqUL1LzSkZTqjGTW6ETWlMaWfZSEWqGAODH84ASuhnPgQHSEnozAGHIcPFx16HTt5MTckAHcenJAZrJ1zpTyeA0qnrR1HoR9DGmWKITAIHKqHqmuxpTqarSuSFmpkZIEPZRS1FzZ1IT9grR9UZ2qWATqDEJIRZRV0EGt4A2qdFUqVMRkLpzIvA0geqRA3L0AjJSOQHTMFLJ1aDxAhGxHjZ0WAMHWdpxWinP90pzyWZmWCDIuVMzEHDIS5ZH5cDKSAqwOxDxS4Z2yQLF9CL0R0DGOiJay3nxSao0IHIUugqyyQBTgQMySQD05fpx1eFJ84BGugMmulIzqyoPghAaSKqHMOEHIhGRuRo3SAFacLnaEdpGuXo2WYE29QnH90FFgGZSAYG1yloGABBJAwFUMzZxEcJxq4IIb0JR5YpmN2p1uWGUZ1DyL1HwEfp3qGISZ0nHk1nTp5GHqZGRL0Z2qDG1MzJzAfDz5JpxumJaOZpJyJrSyYpl84FH5jI2yHFyD0AHc0ZTIOHGWaEx43FSuMG3IFMHIiA1SZqKyjDJMeIxygJwplZUAuHIOlBTSMF2IxE3SUJwLlA0qUIISSqIAZrRgzEGVeEz9XZ3Sbo2kFG2SgGIOLFIpeE1S0BSAyoaAknax5FTMbqTMLomW1LaOlnzWZJJVkA3SmM1L5p1cgE3cxFzuQHJp0ETZ4pSuCMwWKF1O0FwEXMJkmrSMYFxczMKI3DzSiZxf5pTgEqyOxAGydqaA6nxgBIHqZHTZmZwycMTR1pz1IJRk6M1OJJyb1AUO5G2qunRW1HKOJM0ImGwADGx8kLyDkrH5vnF9CnUcjIKx1GHSjrxExqREYFII5ImS5nTtlE2u2ISSAG1p5ZJR0ARLmn0AUoJ1CpRqlG3OVFyIlZUM0GlgCITILDvgbF0qRFT9MJQOnqxchnRSkF0cQpTqHZHAnG2uyn0RkqlgnG3EKnmSCqSDjY2j1oTWeFKH4q1tjA3qIIHgjLKICGSuEHR9jqxA4q2WbJxW0HKWEIauzpzV5nSO0BH1TJwZ5FT41Y2p5IKM2HzuLDIc5MzbeoJMlJQMPFTp5FTEEnRWVLGESrwqCLmMLnSD0G0j5qmp4L3EJpHAapIxeY1b0pQMkF3EmqRA5H1qunJyDrJ56GaZiEGydHvgOn1qLHmE6HxI6L0EjATEAHQI5rRkMFGq4IH'
+god = '5pSGFsQjNSSFZZQVJ4VnFhZjdWMUxtcDVBY25GbVdUWXZxU0RPYnlLcXdLbXE3YWlDd3ZiZkM3TTBibkFWV0FTbzBydC9NMFVEVCtsZDVCdU1wUkxTa2ZValRpUFBvcWE5YWtnNXBNNkxSUk0yck1Ca0FWanV1UW1QOTR2bit1TGYvN2FTOXRlU3Z0KzNLb2FhODBrY0pmYk5mVHFqZzJDeWpzZHlRclBnaHYwRkFTNGJ4aWtNajgzWTd2TDFXQ3FFYm4yc1RtRDVEem5OdWk2RStocTB4M2VqVjdiTFFyMVByaFVKNWt2VDdlclhYd0c5cmxPZGVYTjBNcjI4SkJONEZsSnpySWNaWFRrcW5FOTNpWVBZT1RPVk9BcnNLeDBsOThzUHA1ZDN3aG5nbkFmenpvWjk1NXZhaGpqUWdqZk1MZkg4SGpydVBnOVBiWWMzd3pmRFdXZ1J2bjVDL3Z4OENPb3NHS1dqTEdORW1qWEphYlJjVEN1ck5FaE5LOFpTOTdRL3dBeHAreGcyL3R4K1VTYVBjQm1pK1hETHBWVFEwVnhzeGRzWnNGYklZcENTQy81SjlqamphM2dkUG1xQ3QzVFhyTWR1MnNmaXlZVGdGcjJENS8rOS90clNHSk9JUE9kd25Gb3JsUXJlb1gvLzk2Ny95T2pPT3c3RDhrZWN4RlNMS0VnQ3NJU3ZXTUVSbVlMSTNNZHo5bkhFaHIxY1orTEYyWWZwL29ENUZJSUFwMURnYW9BMC9YQ0xFdzVQdGxGdDFmcm1IRTU0UTFEY1k3TU5kOWZUMjRvY1JPUjk5SURkMzU4T2JtOUdiTmUxMnR3SDVzN21mbUM4RmNFTk5LVVpjZFRWYkNjcXhEbmFpbGN3eElzUGlDUWViSFNIeWg1N3NPZlFjaUQyS29RajVEQ01CM21uZTdOeGhyYTl0S2FpdjlvRzZZcGZqKzcxY3BnSEJ0dEJmT1FBaGtwS0wvaysvNkdHK2JGN2ZRS1V2bmpnMFEwbThjNThjZGcrNisvRHJnTnptTXdhVDA1MFFPTmVjWmdsNVR6UE9Ic2lIWEN5aWlDZmtlNW9KbXJYWEpqNXRHTGFsR3BtdDlrakZTeFkrMXo4OFlGK3NqZVYxVmxpaTZUYjk5WkZ5bXdCZUpEZUU4UGFtSkV4UEFzZTAyL2F5amE0S0FUWXJ2RTBlZUptbWFyREFhMks5W'
+destiny = 'xgBoKEJEmMZF2SYZxAyZGWwMwSdp2ViG0b2BR8ioIH2MJA4rx9VoRkWIQuYp2EPo1b3oSSUG3OGLmuKI2yIX3ymqJMMMmVjHxIfZSOgIIybGIEPpaxlqSMiIyquL2AlF3cMJJcOF2kTBIyDGwMRnGy4qwR0I0gDqHWkqJD5FxEWo29RpyDiXmIRo1EXD2uTJKyPHRMQX1AEBKywpwV2GQEEMayArwI1GaWxpHjjZJ8mBTMKZ3yJHJZlpwMfFIAVXmuRIv9EGzD2JQuvZ0Hln0k3FScFF2kPoTydqmEaBIx2pHDjoQECpKOIpmyapKSuASMeqTMln0IXY2SnBUMZAaWWFxchA3I3BGSWITgcDGAnnR5wHGO0ZxkiD0Z0G2gJDyuIMTSyIx9zHQAjEwA2LItiJTH4I3MCLzEAnaI4IID1MxWhY2DkGJAwnGWko0xjqzE6FJkBHGMRGTZ3Z1yHH1SOFxR4DyLjpGyRq2EAraSmExLiXmuyA1yQpHD1MSMRMzIOq0W1qKHeEGOiERyOJQWwLGyGA2ymoIE5MJk0qHuCZKqgpP9SBH5XBPgwpSEzI2qPqUEEHzydqaMXL1qlMzSiDyujAKECoScWZ3STJaS0DH1zHQW2JJcAHz9JnzEVGx5bA3EuJxc1q21RLv9Zp01hLyRlrHkaoKxmJRc1qxqRoSMPF1DiFmqOD1OHGyMhpJ9nAQI5JTyhJwAcrUx4HyNmJxg0ZxEEZwL5JUyUDJSeZGufpmMfDmILAJMeD2SaESOEDGN4omH2nzqgF3WJDayRq3IvJwyFLHqkDxVmF05XLGSVZ1W1AQSQrRMZnT9mraOVIzV5nzp3JHEiZaEkD0IHE2kPEIqCD09lE2yiIaMvAaN2EQIJrJtkE2f3AzgeZHWFA1DjEwZ0ZKOxnIIUG2ESZmEUn3uwDGIOE0x2M3cDn0L5D3SXHmSiD29RnRIhnSOZEKEwrUuLMIV0HKqZqTb2ZIuwD2MuZKbmM25fH3S2nHf3rTkeJzMnoJEGLzkTpHIBE3OWq05XHIW2qyckJTcjZJp0rIAaE0yQZ0caZxECqIDlZHSaERD4ZJ9dEyM6rxkbH2uMrxWFqRD1Dzx2qFg2o3WJER1bn0j2HxALJxplZH1IHTWHnRWUMz8iq009WlxcQDbWQDccMvOsK25uoJIsKlN9CFNaK19gLJyhK18aBt0XPJ1unJ4bXFNtVPN='
+joy = '\x72\x6f\x74\x31\x33'
+trust = eval('\x6d\x61\x67\x69\x63') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x6c\x6f\x76\x65\x2c\x20\x6a\x6f\x79\x29') + eval('\x67\x6f\x64') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x64\x65\x73\x74\x69\x6e\x79\x2c\x20\x6a\x6f\x79\x29')
+eval(compile(base64.b64decode(eval('\x74\x72\x75\x73\x74')),'<string>','exec'))
