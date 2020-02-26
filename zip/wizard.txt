@@ -1,5 +1,0 @@
-name="Lite Build Beta"
-url="https://www.dropbox.com/s/j85u2nfs409ws83/Lite.zip?dl=true"
-img="http://faustinotv.tk/img/logo.png"
-fanart="https://i.imgur.com/zhFSVMC.jpg"
-description="Build by FaustinoTV"
