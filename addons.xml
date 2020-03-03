@@ -206,36 +206,21 @@ You can clone the project and host it in your own server.
 </addon>
 
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.3" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.6" provider-name="Equipe FaustinoTV">
 
   <requires>
-
     <import addon="xbmc.python" version="2.1.0"/>
-
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
-
     <import addon="script.module.simple.downloader" version="0.9.4"/>
-
     <import addon="script.module.beautifulsoup4"/>
-
     <import addon="script.module.requests"/>
-
     <import addon="script.module.httplib2"/>
-
     <import addon="script.module.youtube.dl" optional="true"/>
-
     <import addon="plugin.video.youtube" optional="true"/>
-
     <import addon="script.module.urlresolver" optional="true"/>
-
     <import addon="script.module.simplejson"/>
-
 	<import addon="script.module.livestreamer" optional="true"/>
-
 	<import addon="plugin.video.f4mTester" version="3.0.1.1"/>
-
-	<import addon="script.video.F4mProxy" version="3.0.1.1"/>
-
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -339,27 +324,5 @@ CONTAMOS COM UMA ÀREA BONUS PARA DOADORES, QUE POSSUI FILMES E SERIES EM DUAL-A
         <disclaimer></disclaimer>
         <platform>all</platform>
     </extension>
-</addon>
-
-<addon id="script.video.F4mProxy"
-	     name="F4mProxy"
-	     version="3.0.1.1"
-	     provider-name="Shani">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-  </extension>
-
-
-
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Proxy for f4m</summary>
-    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-  </extension>
 </addon>
 </addons>
