@@ -188,10 +188,10 @@ You can clone the project and host it in your own server.
   </extension>
 </addon>
 
-<addon id="plugin.video.f4mTester" version="3.0.1.1" name="f4mTester" provider-name="Shani">
+<addon id="plugin.video.f4mTester" version="2.7.9" name="f4mTester" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="3.0.1.1"/>
+        <import addon="script.video.F4mProxy" version="2.7.9"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -206,7 +206,7 @@ You can clone the project and host it in your own server.
 </addon>
 
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.6" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.2.7" provider-name="Equipe FaustinoTV">
 
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -220,13 +220,11 @@ You can clone the project and host it in your own server.
     <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.module.simplejson"/>
 	<import addon="script.module.livestreamer" optional="true"/>
-	<import addon="plugin.video.f4mTester" version="3.0.1.1"/>
+	<import addon="plugin.video.f4mTester" version="2.7.9"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
-
         <provides>video</provides>
-
   </extension>
 
   <extension point="xbmc.addon.metadata">
@@ -323,6 +321,22 @@ CONTAMOS COM UMA ÀREA BONUS PARA DOADORES, QUE POSSUI FILMES E SERIES EM DUAL-A
         <description>Este é o repositório oficial com todos os addons e atualizações do FaustinoTV. Aqui você também encontra as dependências necessárias para que tudo funcione corretamente</description>
         <disclaimer></disclaimer>
         <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
     </extension>
 </addon>
 </addons>
