@@ -1,195 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.2" provider-name="brianhornsby">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="bg">Радио TuneIn</summary>
-		<summary lang="en">TuneIn Radio</summary>
-		<summary lang="de">TuneIn Radio</summary>
-		<summary lang="es">TuneIn Radio</summary>
-		<summary lang="el">Ραδιόφωνο TuneIn</summary>
-		<description lang="bg">Радио TuneIn е безплатна услуга, която ви позволява да слушате всичко, независимо къде се намирате. Каквото желаете - музика, спорт или новини. Радио TuneIn предлага над 50 000 станции от които да избирате. Можете да намерите местните станции или да откриете нови станции от целия свят. Радио TuneIn ви отвежда точно където желаете да сте.</description>
-		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
-		<description lang="de">TuneIn Radio ist ein kostenloser Service, mit dem Sie alles in der Welt, wo immer Sie sind, hören können. Ob Sie Musik, Sport, Nachrichten oder aktuelle Ereignisse hören wollen. TuneIn Radio hält über 50.000 Sender für Sie bereit. Von der Suche nach lokalen Sender, bis zum entdecken neue Sender aus der ganzen Welt. TuneIn Radio bringt Sie, wohin sie wollen.</description>
-		<description lang="es">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
-		<description lang="el">Το ραδιόφωνο TuneIn είναι μία δωρεάν υπηρεσία το οποίο σας επιτρέπει να ακούτε οποιοδήποτε σταθμό από όλο τον κόσμο, από όπου και αν βρίσκεστε. Ακόμη και αν θέλετε να ακούσετε μουσική, αθλητικά γεγονότα, ειδήσεις και άλλα γεγονότα, το ραδιόφωνο TuneIn προσφέρει πάνω από 50.000 σταθμούς για εσάς να διαλέξετε. Είτε θέλετε να ακούσετε τοπικούς σταθμούς είτε να ανακαλύψετε νέους από όλο τον κόσμο, το ραδιόφωνο TuneIn σας πηγαίνει όπου θελήσετε να βρεθείτε.</description>
-		<language></language>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=119315</forum>
-		<website>http://brianhornsby.com/kodi_addons/tuneinradio</website>
-		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
-	</extension>
-</addon>
 
-<addon id="plugin.googledrive" name="Google Drive" version="1.3.3" provider-name="Carlos Guzman (cguZZman)">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.2.10"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>image audio video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="login" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en_GB">Google Drive for KODI</summary>
-		<description lang="en_GB">
-Play all your media from Google Drive including Videos, Music and Pictures (including Google Photos).
- - Unlimited number of accounts.
- - Team Drives support
- - Google Photos support
- - Search over your drive.
- - Auto-Refreshed slideshow.
- - Export your videos to your library (.strm files)
- - Use Google Drive as a source
- - This program is not affiliated with or sponsored by Google.
-		</description>
-		<summary lang="he_IL">כונן Google Drive של מיקרוסופט עבור קודי</summary>
-		<description lang="he_IL">
-הפעל את כל המדיה שלך מ- Google Drive כולל וידאו, מוסיקה ותמונות.
-  - מספר בלתי מוגבל של חשבונות.
-  - חיפוש ומציאת הכונן שלך.
-  - ריענון מצגת אוטומטית.
-  - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
-  - שימוש ב-Google Drive כמקור
-  - תוכנית זו אינה קשורה או ממומנת על ידי Google.
-		</description>
-		<license>SPDX-License-Identifier: GPL-3.0-or-later</license>
-		<source>https://github.com/cguZZman/plugin.googledrive</source>
-		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
-		<website>https://addons.kodi.tv/show/plugin.googledrive</website>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>
-v1.3.3 released Feb 14, 2020:
-- Check for google ban
-v1.3.2 released Feb 12, 2020:
-- Fix video playback in google photos
-- Fix search
-v1.3.1 released Feb 10, 2020:
-- Fix playback
-v1.3.0 released Jan 4, 2019:
-- Ability to specify default playback quality
-v1.2.12 released Oct 2, 2018:
-- Google Photos resolution fix
-v1.2.11 released Sep 20, 2018:
-- Resume points and watched status for strm files in library
-v1.2.10 released Sep 12, 2018:
-- Google Photos fix
-- Order by date fix
-v1.2.8 released Sep 11, 2018:
-- Subtitles assigned in source mode
-- Fixes
-v1.2.6 released Aug 26, 2018:
-- Team drive list fix
-v1.2.4 released Aug 24, 2018:
-- strm files saved in the cloud are exported as is.
-v1.2.3 released Aug 17, 2018:
-- Auto export and watch export folder.
-- Fixes
-v1.2.2 released Jul 15, 2018:
-- Fix requesting files with a single quote in the name in source mode.
-v1.2.1 released Jul 14, 2018:
-- Source mode fix
-v1.2.0 released Jul 12, 2018:
-- Team Drive support
-v1.1.0 released Jul 11, 2018:
-- New mode for source and download services. Both moved to respective addons.
-- Source service fixed.
-v1.0.5 released July 6, 2018:
-- Fix display more than 100 files in source mode
-v1.0.4 released July 5, 2018:
-- Fix exporting and google photos
-v1.0.3 released April 13, 2018:
-- Fix bug playing files with a single quote in the name.
-v1.0.2 released March 15, 2018:
-- Bug fixes
-- Auto export strm
-- Select stream format
-v1.0.1 released Nov 30, 2017:
-- Bug fixes
-v1.0.0 Nov 6, 2017:
-- First release
-		</news>
-		<disclaimer lang="en_GB">
-This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
-If you want to know more about OAuth 2.0 you can visit the following pages:
-- https://oauth.net/2/
-- https://developers.google.com/identity/protocols/OAuth2
-- https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth
-
-Kodi and myself take no responsibility or liability.
-
-The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
-The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
-You can clone the project and host it in your own server.
-		</disclaimer>
-	</extension>
-</addon>
-
-<addon id="plugin.program.adritecnewsinstalladdons" name="[COLOR dodgerblue][B]Adritec[/B][COLOR red][B]News[/B] [COLOR gold][B]ON[/B][/COLOR]" version="2.2.3" provider-name="[COLOR dodgerblue][B]Adritec[/B][/COLOR][COLOR red][B]News[/B][/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.urlresolver" />
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer"/>
-    <import addon="script.module.pyamf"/>
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.addon.common" />
-	<import addon="script.module.addon.signals" version="0.0.1"/>
-    <import addon="script.module.unidecode" version="0.4.16"/>
-    <import addon="script.module.requests" version="1.0.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="adritec.py">
-  <provides>video executable</provides>
-  </extension>
-    <extension point="xbmc.service" library="servicos.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-	<description lang="en">[COLOR white][B]Bem vindo ao Instalador de addons, uma nova forma para agilizar uma instalação de addons providas da Internet. Agora com [/COLOR][COLOR orange][B]MANUTENÇÃO em seu Kodi[/B][/COLOR][COLOR white][B], excelente ferramenta e eficaz[/B].[/COLOR] [COLOR white][B]*NOSSO CANAL: [B][COLOR dodgerblue]Pesquize no [COLOR white][/B][COLOR red][B]YouTube [/B][/COLOR] [B]por: [/B][COLOR dodgerblue][B]Adritec[/B][/COLOR][COLOR red][B] News[/B][/COLOR][COLOR white][B] *COLABORE: [/B][/COLOR][COLOR gold][B]https://apoia.se/adritecnews[/B][/COLOR]  [COLOR dodgerblue][B]Adritec[/B][/COLOR][COLOR red][B] News[/B][/COLOR][COLOR gold][B] ON [/B][/COLOR][B]É apenas um AGREGADOR de addons, assim como o Google.com, apenas agrega e organiza os links externos e outros.[/B][/COLOR] [COLOR orangered][B]Não sou responsável pelos arquivos (add-ons) aqui encontrados.[/B][/COLOR]</description>
-	<disclaimer lang="en">[COLOR orangered][B]ATENÇÃO[/B]:[/COLOR][COLOR lawngreen] [B]"PROIBIDA COPIA E INFORMAÇÕES CONTIDOS NESSE SCRIPT (ADD-ON) SEM MINHA ALTORIZAÇÃO"[/B][/COLOR] [COLOR ][COLOR orangered][B]REGISTRO:[/COLOR] [COLOR skyblue][B]"SCRIPT REGISTRADO POR QUESTÃO DE DIREITOS AUTORAIS"[/B][/COLOR]</disclaimer>
-   	<platform>all</platform>
-    <website>http://adritecnews.com</website>
-    <source></source>
-    <forum></forum>
-    <news>*Este trabalho está licenciado sob uma Licença Creative Commons
-*Atribuição-NãoComercial-SemDerivações 4.0 Internacional.
-*Para ver uma cópia desta licença,
-*visite: http://creativecommons.org/licenses/by-nc-nd/4.0/.</news>
-	<assets>
-            <icon>images/icon.png</icon>
-            <fanart>images/fanart.jpg</fanart>
-            <screenshot>resources/print/0.jpg</screenshot>
-            <screenshot>resources/print/1.jpg</screenshot>
-            <screenshot>resources/print/2.jpg</screenshot>
-            <screenshot>resources/print/3.jpg</screenshot>
-	</assets>
-	</extension>
-  <extension point="xbmc.addon.repository" name="adritecNews Repository">
-	<info compressed="false">http://raw.github.com/adritec/adritecrepo/master/addons.xml</info>
-	<checksum>http://raw.github.com/adritec/adritecrepo/master/addons.xml.md5</checksum>
-	<datadir zip="true">http://raw.github.com/adritec/adritecrepo/master/repo/</datadir>
-  </extension>
-</addon>
-
-
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.8.1" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.8.2" provider-name="Equipe FaustinoTV">
 
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -198,12 +10,12 @@ You can clone the project and host it in your own server.
     <import addon="script.module.beautifulsoup4"/>
     <import addon="script.module.requests"/>
     <import addon="script.module.httplib2"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="script.module.youtube.dl"/>
     <import addon="plugin.video.youtube" optional="true"/>
-    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.urlresolver"/>
     <import addon="script.module.simplejson"/>
 	<import addon="script.module.livestreamer" optional="true"/>
-	<import addon="plugin.video.f4mTester" version="2.7.1"/>
+	<import addon="plugin.video.f4mTester" version="3.0.1.1"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -228,54 +40,11 @@ CONTAMOS COM UMA ÀREA BONUS PARA DOADORES, QUE POSSUI FILMES E SERIES EM DUAL-A
 
 </addon>
 
-<addon id="plugin.video.gdrive" version="0.8.35" name="gdrive" provider-name="ddurdle">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video audio image programs</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
-        <description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="repository.aeon.nox.silvo" name="Aeon Nox: SiLVO Repository" version="1.0.4" provider-name="SiLVO">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
-	<extension point="xbmc.addon.repository" name="Aeon Nox: SiLVO Repo">
-		<dir minversion="15.0.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard</datadir>
-		</dir>
-		<dir minversion="16.0.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis</datadir>
-		</dir>
-		<dir minversion="16.9.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>My version of Aeon Nox 5</summary>
-		<description>Main Repository for Aeon Nox: SiLVO</description>
-		<platform>all</platform>
-		<news>[B]***Recent Changes***[CR]Remove md5 hash support (never used it)</news>
-	</extension>
-</addon>
-
-<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="2.0" provider-name="Equipe FaustinoTV">
+<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="2.1" provider-name="Equipe FaustinoTV">
     <extension point="xbmc.addon.repository" name="Repositório FaustinoTV">
         <info>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml.md5</checksum>
-        <datadir zip="true">http://repo.faustinotv.cf/zip/</datadir>
+        <datadir zip="true">https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/Addons/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositório FaustinoTV</summary>
@@ -285,29 +54,39 @@ CONTAMOS COM UMA ÀREA BONUS PARA DOADORES, QUE POSSUI FILMES E SERIES EM DUAL-A
     </extension>
 </addon>
 
-<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
-	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
-	<dir>
-		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
-		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
-	</dir>
+<addon 	id="vikings.repo" name="[B][COLOR yellow]  Vikings  [COLOR orange]Repositorio Vikings Oficial, SEM BANIMENTO!![/B][/COLOR]"
+		version="1.53"
+		provider-name="[B][COLOR gold]Vikings TEAM[/B][/COLOR]">
 
-    <dir>
-		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
-		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
-    </dir>
+	<requires>
+            <import addon="xbmc.python" version="2.1.0"/>
+		    <import addon="script.module.addon.common" optional="true" />
+		    <import addon="script.module.t0mm0.common" optional="true" />
+		    <import addon="script.module.urlresolver" optional="true" />
+    </requires>
+
+	<extension point="xbmc.addon.repository" name=".Vikings Repositorio">
+		<info compressed="true">https://github.com/vikingsbuild/vikings.repo/raw/master/addons.xml</info>
+			<checksum>https://github.com/vikingsbuild/vikings.repo/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingsbuild/vikings.repo/raw/master</datadir>
 	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Unofficial Kodi Addons from TVADDONS.CO</summary>
-		<description>Unofficial Kodi Addons from the TVADDONS.CO Add-on Repository. Please visit www.tvaddons.co for support!
 
-Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
-         <disclaimer>TVADDONS.CO did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
+	<extension point="xbmc.addon.metadata">
+	<news>
+	[COLOR orange]LOG DE CORREÇÔES[/COLOR]
+	[COLOR orange]*[/COLOR] V 1.15.1 - Excluido a instalação do plugin Youtube que provocava erros em algumas box...
+	[COLOR gold]*[/COLOR]   V 1.17.1 - Corrigido dependências que provocava erros quando instalado o repositório em Kodi Padrão.
+	</news>
+
+	<summary>Repositorio Vikings levando os melhores addons a sua familia e aos quatro cantos do Mundo!!!</summary>
+
+	<description>	[B][COLOR red]Repositório oficial Vikings Build - Proibido reprodução total ou parcial sem prévia autorização[/COLOR][/B]
+					[B][COLOR white]Addons deste repositório é de uso gratuito!![/COLOR][/B]
+					[B][COLOR firebrick]Proibido a venda dos add-ons contidos neste repositório[/COLOR][/B]
+	</description>
+
+<disclaimer>[B][COLOR orange]Repositório Vikings é apenas um AGREGADOR de ADDONS e, assim como o Google.com, apenas agrega e organiza ADDONS DE TERCEIROS. Não somos responsáveis pelos arquivos aqui encontrados.[/COLOR][/B]</disclaimer>
 		<platform>all</platform>
-                <forum>https://www.tvaddons.co/forums</forum>
-                <website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
 </addons>
