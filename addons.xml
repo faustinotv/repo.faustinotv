@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.8.2" provider-name="Equipe FaustinoTV">
+<addon id="plugin.video.faustinotv" name="[B][COLOR cyan]FaustinoTV[/COLOR][/B]" version="2.8.3" provider-name="Equipe FaustinoTV">
 
   <requires>
+
     <import addon="xbmc.python" version="2.1.0"/>
+
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
+
     <import addon="script.module.simple.downloader" version="0.9.4"/>
+
     <import addon="script.module.beautifulsoup4"/>
+
     <import addon="script.module.requests"/>
+
     <import addon="script.module.httplib2"/>
-    <import addon="script.module.youtube.dl"/>
-    <import addon="plugin.video.youtube" optional="true"/>
-    <import addon="script.module.urlresolver"/>
+
+    <import addon="script.module.youtube.dl" optional="true"/>
+
+    <import addon="plugin.video.youtube"/>
+
+    <import addon="script.module.urlresolver" optional="true"/>
+
     <import addon="script.module.simplejson"/>
+
 	<import addon="script.module.livestreamer" optional="true"/>
-	<import addon="plugin.video.f4mTester" version="3.0.1.1"/>
+
+	<import addon="plugin.video.f4mTester" version="2.7.1"/>
+
+	<import addon="script.video.F4mProxy" version="2.1.0"/>
+
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -40,11 +55,11 @@ CONTAMOS COM UMA ÀREA BONUS PARA DOADORES, QUE POSSUI FILMES E SERIES EM DUAL-A
 
 </addon>
 
-<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="2.1" provider-name="Equipe FaustinoTV">
+<addon id="repository.FaustinoTV" name="[B][COLOR blue]Faustino[/COLOR][COLOR yellow]TV[/COLOR] [COLOR cyan]Repo[/COLOR][/B]" version="2.2" provider-name="Equipe FaustinoTV">
     <extension point="xbmc.addon.repository" name="Repositório FaustinoTV">
-        <info>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/faustinotv/repo.faustinotv/master/Addons/</datadir>
+        <info>https://github.com/faustinotv/repo.faustinotv/raw/master/addons.xml</info>
+        <checksum>https://github.com/faustinotv/repo.faustinotv/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/faustinotv/repo.faustinotv/raw/master/Addons</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositório FaustinoTV</summary>
@@ -52,41 +67,5 @@ CONTAMOS COM UMA ÀREA BONUS PARA DOADORES, QUE POSSUI FILMES E SERIES EM DUAL-A
         <disclaimer></disclaimer>
         <platform>all</platform>
     </extension>
-</addon>
-
-<addon 	id="vikings.repo" name="[B][COLOR yellow]  Vikings  [COLOR orange]Repositorio Vikings Oficial, SEM BANIMENTO!![/B][/COLOR]"
-		version="1.53"
-		provider-name="[B][COLOR gold]Vikings TEAM[/B][/COLOR]">
-
-	<requires>
-            <import addon="xbmc.python" version="2.1.0"/>
-		    <import addon="script.module.addon.common" optional="true" />
-		    <import addon="script.module.t0mm0.common" optional="true" />
-		    <import addon="script.module.urlresolver" optional="true" />
-    </requires>
-
-	<extension point="xbmc.addon.repository" name=".Vikings Repositorio">
-		<info compressed="true">https://github.com/vikingsbuild/vikings.repo/raw/master/addons.xml</info>
-			<checksum>https://github.com/vikingsbuild/vikings.repo/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/vikingsbuild/vikings.repo/raw/master</datadir>
-	</extension>
-
-	<extension point="xbmc.addon.metadata">
-	<news>
-	[COLOR orange]LOG DE CORREÇÔES[/COLOR]
-	[COLOR orange]*[/COLOR] V 1.15.1 - Excluido a instalação do plugin Youtube que provocava erros em algumas box...
-	[COLOR gold]*[/COLOR]   V 1.17.1 - Corrigido dependências que provocava erros quando instalado o repositório em Kodi Padrão.
-	</news>
-
-	<summary>Repositorio Vikings levando os melhores addons a sua familia e aos quatro cantos do Mundo!!!</summary>
-
-	<description>	[B][COLOR red]Repositório oficial Vikings Build - Proibido reprodução total ou parcial sem prévia autorização[/COLOR][/B]
-					[B][COLOR white]Addons deste repositório é de uso gratuito!![/COLOR][/B]
-					[B][COLOR firebrick]Proibido a venda dos add-ons contidos neste repositório[/COLOR][/B]
-	</description>
-
-<disclaimer>[B][COLOR orange]Repositório Vikings é apenas um AGREGADOR de ADDONS e, assim como o Google.com, apenas agrega e organiza ADDONS DE TERCEIROS. Não somos responsáveis pelos arquivos aqui encontrados.[/COLOR][/B]</disclaimer>
-		<platform>all</platform>
-	</extension>
 </addon>
 </addons>
